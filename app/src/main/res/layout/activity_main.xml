@@ -14,7 +14,7 @@
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textSize="56sp"/>
 
-    <Button
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
         android:id="@+id/btn_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         android:onClick="onClickStart"
         android:text="@string/start" />
 
-    <Button
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
         android:id="@+id/btn_stop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
         android:onClick="onClickStop"
         android:text="@string/stop" />
 
-    <Button
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
         android:id="@+id/btn_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
