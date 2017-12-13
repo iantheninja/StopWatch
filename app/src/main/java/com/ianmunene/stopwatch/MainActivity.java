@@ -17,6 +17,11 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if (savedInstanceState != null) {
+            seconds = savedInstanceState.getInt("seconds");
+            running = savedInstanceState.getBoolean("running");
+        }
+
         runTimer();
     }
 
@@ -52,6 +57,13 @@ public class MainActivity extends Activity {
                 handler.postDelayed(this, 1000);
             }
         });
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putInt("seconds", seconds);
+        savedInstanceState.putBoolean("running", running);
 
     }
 }
